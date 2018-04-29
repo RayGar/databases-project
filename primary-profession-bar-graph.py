@@ -9,10 +9,15 @@ import seaborn as sns
 fig, ax = plt.subplots()
 
 # Load in data
-tips = pd.read_csv("Normalized_title_basic.csv")
+tips = pd.read_csv("people.csv")
 
 # Count Plot (a.k.a. Bar Plot)
-sns.countplot(x='region', data=tips, order=tips.region.value_counts().iloc[:15].index)
+#sns.countplot(x='runtimeMinutes', data=tips, order=tips.primaryProfession.value_counts().iloc[:10].index) 
+
+
+# Recommended way
+sns.distplot(tips.runtimeMinutes, df=tips)
+
 
 # Show the plot
 plt.show()
