@@ -1,6 +1,6 @@
-##README
+## README
 
-#CS4350 Concepts of Databases
+# CS4350 Concepts of Databases
 
 Final project
 
